@@ -1,6 +1,6 @@
 # Port By @VckyouuBitch From GeezProjects
 # Copyright © 2021 Geez-Projects
-from telethon.tl.types import (
+from pyrogram.tl.types import (
     ChannelParticipantsKicked,
 )
 
