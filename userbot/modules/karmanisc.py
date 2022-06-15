@@ -7,17 +7,17 @@ import asyncio
 import time
 import html
 from justwatch import JustWatch
-from telethon import *
+from pyrogram import *
 from userbot.events import register
 from userbot import CMD_HELP, bot, TEMP_DOWNLOAD_DIRECTORY, DEFAULT_BIO, ALIVE_NAME
-from telethon import events
-from telethon.tl import functions
+from pyrogram import events
+from pyrogram.tl import functions
 from urllib.parse import quote
 from datetime import datetime
-from telethon.tl.types import UserStatusEmpty, UserStatusLastMonth, UserStatusLastWeek, UserStatusOffline, UserStatusOnline, UserStatusRecently, ChatBannedRights
-from telethon.tl.functions.users import GetFullUserRequest
-from telethon.tl.types import MessageEntityMentionName
-from telethon.errors.rpcerrorlist import YouBlockedUserError
+from pyrogram.tl.types import UserStatusEmpty, UserStatusLastMonth, UserStatusLastWeek, UserStatusOffline, UserStatusOnline, UserStatusRecently, ChatBannedRights
+from pyrogram.tl.functions.users import GetFullUserRequest
+from pyrogram.tl.types import MessageEntityMentionName
+from pyrogram.errors.rpcerrorlist import YouBlockedUserError
 
 
 import logging
