@@ -8,7 +8,7 @@ import asyncio
 import os
 import time
 
-from telethon.tl.types import DocumentAttributeFilename
+from pyrogram.tl.types import DocumentAttributeFilename
 
 from userbot import CMD_HELP, bot
 from userbot.events import register
