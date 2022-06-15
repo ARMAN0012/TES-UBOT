@@ -7,14 +7,14 @@
 # Ambil aja gapapa tp Gaguna kaya hidup lu Woakkakaka
 
 
-from telethon.utils import get_display_name
-from telethon.tl import types
+from pyrogram.utils import get_display_name
+from pyrogram.tl import types
 
-from telethon.tl.functions.channels import GetFullChannelRequest as getchat
-from telethon.tl.functions.phone import CreateGroupCallRequest as startvc
-from telethon.tl.functions.phone import DiscardGroupCallRequest as stopvc
-from telethon.tl.functions.phone import GetGroupCallRequest as getvc
-from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
+from pyrogram.tl.functions.channels import GetFullChannelRequest as getchat
+from pyrogram.tl.functions.phone import CreateGroupCallRequest as startvc
+from pyrogram.tl.functions.phone import DiscardGroupCallRequest as stopvc
+from pyrogram.tl.functions.phone import GetGroupCallRequest as getvc
+from pyrogram.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 
 from userbot import CMD_HELP
 from userbot.events import register
