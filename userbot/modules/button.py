@@ -5,7 +5,7 @@
 import os 
 import re 
  
-from telethon import Button 
+from pyrogram import Button 
  
 from userbot import BOT_USERNAME 
 from userbot import CMD_HELP, tgbot 
