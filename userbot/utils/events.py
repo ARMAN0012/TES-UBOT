@@ -1,4 +1,4 @@
-from telethon.tl.types import MessageEntityMentionName
+from pyrogram.tl.types import MessageEntityMentionName
 
 from .logger import logging
 from .tools import edit_delete
