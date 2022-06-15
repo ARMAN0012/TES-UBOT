@@ -9,10 +9,10 @@
 
 import os
 
-from telethon.tl.functions.photos import GetUserPhotosRequest
-from telethon.tl.functions.users import GetFullUserRequest
-from telethon.tl.types import MessageEntityMentionName
-from telethon.utils import get_input_location
+from pyrogram.tl.functions.photos import GetUserPhotosRequest
+from pyrogram.tl.functions.users import GetFullUserRequest
+from pyrogram.tl.types import MessageEntityMentionName
+from pyrogram.utils import get_input_location
 from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
 from userbot.events import register
 
