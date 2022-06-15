@@ -7,24 +7,24 @@
 
 import os
 
-from telethon.errors import ImageProcessFailedError, PhotoCropSizeSmallError
+from pyrogram.errors import ImageProcessFailedError, PhotoCropSizeSmallError
 
-from telethon.errors.rpcerrorlist import (PhotoExtInvalidError,
+from pyrogram.errors.rpcerrorlist import (PhotoExtInvalidError,
                                           UsernameOccupiedError)
 
-from telethon.tl.functions.account import (UpdateProfileRequest,
+from pyrogram.tl.functions.account import (UpdateProfileRequest,
                                            UpdateUsernameRequest)
 
-from telethon.tl.functions.channels import GetAdminedPublicChannelsRequest
+from pyrogram.tl.functions.channels import GetAdminedPublicChannelsRequest
 
-from telethon.tl.functions.photos import (DeletePhotosRequest,
+from pyrogram.tl.functions.photos import (DeletePhotosRequest,
                                           GetUserPhotosRequest,
                                           UploadProfilePhotoRequest)
 
-from telethon.tl.types import InputPhoto, MessageMediaPhoto, User, Chat, Channel
-from telethon.tl.functions.users import GetFullUserRequest
-from telethon.tl.types import MessageEntityMentionName
-from telethon.utils import get_input_location
+from pyrogram.tl.types import InputPhoto, MessageMediaPhoto, User, Chat, Channel
+from pyrogram.tl.functions.users import GetFullUserRequest
+from pyrogram.tl.types import MessageEntityMentionName
+from pyrogram.utils import get_input_location
 
 from userbot import bot, CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
 from userbot.events import register
