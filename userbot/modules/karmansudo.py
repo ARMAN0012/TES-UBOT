@@ -1,7 +1,7 @@
 import os
 
 import heroku3
-from telethon.tl.functions.users import GetFullUserRequest
+from pyrogram.tl.functions.users import GetFullUserRequest
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME, SUDO_HANDLER, SUDO_USERS
