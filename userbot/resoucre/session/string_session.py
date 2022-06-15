@@ -5,8 +5,8 @@
 # you may not use this file except in compliance with the License.
 #
 
-from telethon.sessions import StringSession
-from telethon.sync import TelegramClient
+from pyrogram.sessions import StringSession
+from pyrogram.sync import TelegramClient
 
 print(
     """Please go-to my.telegram.org
