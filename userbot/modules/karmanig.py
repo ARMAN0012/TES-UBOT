@@ -13,8 +13,8 @@
 # Kalo Clone Ini Jangan dihapus ya anjg nanti Koala Ngamuk, Ok Mksh Sma Sma
 
 from platform import uname
-from telethon import events
-from telethon.errors.rpcerrorlist import YouBlockedUserError
+from pyrogram import events
+from pyrogram.errors.rpcerrorlist import YouBlockedUserError
 from userbot.events import register
 from userbot import bot, CMD_HELP, ALIVE_NAME
 
