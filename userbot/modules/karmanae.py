@@ -1,7 +1,7 @@
 # Based Plugins
 # Ported for Lord-Userbot By liualvinas/Alvin
 
-from telethon import events
+from pyrogram import events
 from userbot.events import register
 from userbot import CMD_HELP
 
