@@ -4,8 +4,8 @@
 # you may not use this file except in compliance with the License.
 # thanks to anishsk
 
-from telethon.tl.functions.messages import EditChatDefaultBannedRightsRequest
-from telethon.tl.types import ChatBannedRights
+from pyrogram.tl.functions.messages import EditChatDefaultBannedRightsRequest
+from pyrogram.tl.types import ChatBannedRights
 
 from userbot import CMD_HELP
 from userbot.events import register
