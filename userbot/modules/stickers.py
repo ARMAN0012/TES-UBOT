@@ -11,8 +11,8 @@ import urllib.request
 from os import remove
 
 from PIL import Image
-from telethon.tl.functions.messages import GetStickerSetRequest
-from telethon.tl.types import (
+from pyrogram.tl.functions.messages import GetStickerSetRequest
+from pyrogram.tl.types import (
     DocumentAttributeFilename,
     DocumentAttributeSticker,
     InputStickerSetID,
@@ -25,7 +25,7 @@ from userbot.events import register
 
 KANGING_STR = [
     "BERUSAHA MENCURY TIKEL INI! HAHAHA",
-    "GUA NYOLONG TIKEL KAU YA KONTOLLL!",
+    "AKU NYOPET STIKER KAU YA KONTOLLL!",
 ]
 
 
