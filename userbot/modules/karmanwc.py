@@ -11,7 +11,7 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from PIL import Image
 from scipy.ndimage import gaussian_gradient_magnitude
-from telethon.tl.types import DocumentAttributeFilename
+from pyrogram.tl.types import DocumentAttributeFilename
 from wordcloud import ImageColorGenerator, WordCloud
 
 from userbot import CMD_HELP, bot
