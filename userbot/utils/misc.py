@@ -6,8 +6,8 @@ from io import BytesIO
 import aiohttp
 from aiohttp import ContentTypeError
 from PIL import Image
-from telethon.tl import types
-from telethon.utils import get_display_name, get_peer_id
+from pyrogram.tl import types
+from pyrogram.utils import get_display_name, get_peer_id
 
 from userbot import DEVS, TEMP_DOWNLOAD_DIRECTORY
 from userbot.utils import runcmd
