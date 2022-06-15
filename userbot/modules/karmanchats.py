@@ -10,18 +10,18 @@ from datetime import datetime
 from telethon import functions
 from emoji import emojize
 from math import sqrt
-from telethon.tl.functions.channels import GetFullChannelRequest, GetParticipantsRequest
-from telethon.tl.functions.messages import GetFullChatRequest, GetHistoryRequest
-from telethon.tl.types import MessageActionChannelMigrateFrom, ChannelParticipantsAdmins
-from telethon.errors import (
+from pyrogram.tl.functions.channels import GetFullChannelRequest, GetParticipantsRequest
+from pyrogram.tl.functions.messages import GetFullChatRequest, GetHistoryRequest
+from pyrogram.tl.types import MessageActionChannelMigrateFrom, ChannelParticipantsAdmins
+from pyrogram.errors import (
     ChannelInvalidError,
     ChannelPrivateError,
     ChannelPublicGroupNaError)
-from telethon.utils import get_input_location
-from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantsBots
+from pyrogram.utils import get_input_location
+from pyrogram.tl.types import ChannelParticipantAdmin, ChannelParticipantsBots
 from userbot.events import register
 from userbot.modules.admins import get_user_from_event
-from telethon.utils import pack_bot_file_id
+from pyrogram.utils import pack_bot_file_id
 
 
 @register(outgoing=True, pattern="^.id(?: |$)(.*)")
