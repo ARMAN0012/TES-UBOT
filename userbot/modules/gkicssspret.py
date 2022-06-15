@@ -4,9 +4,9 @@ dont edit credits
 """
 
 
-from telethon.tl.types import (
+from pyrogram.tl.types import (
     MessageEntityMentionName)
-from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
+from pyrogram.tl.functions.contacts import BlockRequest, UnblockRequest
 
 from userbot.events import register
 from userbot import ALIVE_NAME, CMD_HELP, DEVS
