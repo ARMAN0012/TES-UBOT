@@ -19,6 +19,6 @@ apt-get upgrade -y
 pkg upgrade -y
 pkg install python wget -y
 wget https://raw.githubusercontent.com/ramadhani892/RAM-UBOT/RAM-UBOT/userbot/resources/session/string_session.py
-pip install  pyrogram
+pip install pyrogram
 clear
 python3 string_session.py
