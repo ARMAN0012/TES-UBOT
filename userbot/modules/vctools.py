@@ -6,9 +6,9 @@ from pytgcalls.exceptions import (
     AlreadyJoinedError as asu,
     NotInGroupCallError as ajg
 )
-from telethon.tl import types
-from telethon.utils import get_display_name
-from telethon.tl.functions.users import GetFullUserRequest as ngentod
+from pyrogram import types
+from pyrogram.utils import get_display_name
+from pyrogram.tl.functions.users import GetFullUserRequest as ngentod
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, call_py
 from userbot.utils import edit_delete, edit_or_reply, edit_delete, kar_cmd
