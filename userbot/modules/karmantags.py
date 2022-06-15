@@ -2,12 +2,12 @@
 # Copyright © Geez - Project
 # Credits By Ultroid
 
-from telethon.tl.types import ChannelParticipantAdmin as admin
-from telethon.tl.types import ChannelParticipantCreator as owner
-from telethon.tl.types import UserStatusOffline as off
-from telethon.tl.types import UserStatusOnline as onn
-from telethon.tl.types import UserStatusRecently as rec
-from telethon.utils import get_display_name
+from pyrogram.tl.types import ChannelParticipantAdmin as admin
+from pyrogram.tl.types import ChannelParticipantCreator as owner
+from pyrogram.tl.types import UserStatusOffline as off
+from pyrogram.tl.types import UserStatusOnline as onn
+from pyrogram.tl.types import UserStatusRecently as rec
+from pyrogram.utils import get_display_name
 
 from userbot.events import register
 from userbot import CMD_HELP
