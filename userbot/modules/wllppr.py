@@ -8,7 +8,7 @@ import asyncio
 import os
 from asyncio.exceptions import TimeoutError
 
-from telethon.errors.rpcerrorlist import YouBlockedUserError
+from pyrogram.errors.rpcerrorlist import YouBlockedUserError
 
 from userbot import CMD_HELP, bot
 from userbot.events import register
