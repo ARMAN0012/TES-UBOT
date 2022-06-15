@@ -5,7 +5,7 @@
 # you may not use this file except in compliance with the License.
 # RAM-UBOT
 
-from telethon.errors.rpcerrorlist import YouBlockedUserError
+from pyrogram.errors.rpcerrorlist import YouBlockedUserError
 from userbot import bot, CMD_HELP
 from userbot.events import register
 
