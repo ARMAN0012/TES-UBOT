@@ -8,9 +8,9 @@ import random
 from userbot import CMD_HELP
 from userbot.events import register
 from userbot import DEFAULTUSER
-from telethon.tl.types import InputMessagesFilterVideo
-from telethon.tl.types import InputMessagesFilterVoice
-from telethon.tl.types import InputMessagesFilterPhotos
+from pyrogram.tl.types import InputMessagesFilterVideo
+from pyrogram.tl.types import InputMessagesFilterVoice
+from pyrogram.tl.types import InputMessagesFilterPhotos
 
 
 @register(outgoing=True, pattern=r"^\.asupan$")
