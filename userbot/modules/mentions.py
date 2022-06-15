@@ -1,6 +1,6 @@
 import re
 
-from telethon.tl import types
+from pyrogram.tl import types
 
 from userbot import CMD_HELP, bot
 from userbot.events import register
