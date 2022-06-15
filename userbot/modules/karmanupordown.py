@@ -19,7 +19,7 @@ from pySmartDL import SmartDL
 import asyncio
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
-from telethon.tl.types import DocumentAttributeVideo
+from pyrogram.tl.types import DocumentAttributeVideo
 
 from userbot import LOGS, CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
 from userbot.utils import progress, humanbytes
