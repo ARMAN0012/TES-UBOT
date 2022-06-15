@@ -4,13 +4,13 @@
 # Hush Hush Sana ajg gausah kesini
 # Si ngentot, ⚠️ 𝙹𝙰𝙽𝙶𝙰𝙽 𝙳𝙸 𝙷𝙰𝙿𝚄𝚂 ⚠️
 
-from telethon.tl import functions
-from telethon.tl.functions.messages import GetFullChatRequest
-from telethon.errors import (
+from pyrogram.tl import functions
+from pyrogram.tl.functions.messages import GetFullChatRequest
+from pyrogram.errors import (
     ChannelInvalidError,
     ChannelPrivateError,
     ChannelPublicGroupNaError)
-from telethon.tl.functions.channels import GetFullChannelRequest
+from pyrogram.tl.functions.channels import GetFullChannelRequest
 
 from userbot.events import register
 from userbot import CMD_HELP
