@@ -7,7 +7,7 @@ import random
 import urllib
 import os
 
-from telethon.tl import functions
+from pyrogram.tl import functions
 
 
 import asyncio
