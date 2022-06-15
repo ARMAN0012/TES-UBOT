@@ -8,7 +8,7 @@ from colour import Color
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from PIL import Image, ImageOps, ImageDraw, ImageFont
-from telethon.tl.types import DocumentAttributeFilename
+from pyrogram.tl.types import DocumentAttributeFilename
 
 from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY, bot
 from userbot.events import register
