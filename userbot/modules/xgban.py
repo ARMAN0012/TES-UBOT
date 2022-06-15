@@ -1,7 +1,7 @@
 from asyncio import sleep
 
-from telethon.tl.functions.channels import EditBannedRequest
-from telethon.tl.types import ChatBannedRights
+from pyrogram.tl.functions.channels import EditBannedRequest
+from pyrogram.tl.types import ChatBannedRights
 
 from userbot import CMD_HELP
 from userbot.events import register
