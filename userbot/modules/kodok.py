@@ -5,7 +5,7 @@
 # Rama ganteng mks sm sm
 
 
-from telethon.errors import ChatSendInlineForbiddenError, ChatSendStickersForbiddenError
+from pyrogram.errors import ChatSendInlineForbiddenError, ChatSendStickersForbiddenError
 
 from userbot.events import register
 from userbot import CMD_HELP, bot
