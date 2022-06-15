@@ -21,12 +21,12 @@ import logging
 
 import redis
 
-from telethon.crypto import AuthKey
-from telethon.sessions import MemorySession
+from pyrogram.crypto import AuthKey
+from pyrogram.sessions import MemorySession
 """
-from telethon import utils
-from telethon.sessions.memory import _SentFileType
-from telethon.tl import types
+from pyrogram import utils
+from pyrogram.sessions.memory import _SentFileType
+from pyrogram.tl import types
 """
 
 LOGGER = logging.getLogger(__name__)
