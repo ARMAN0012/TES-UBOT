@@ -30,8 +30,8 @@ from gtts import gTTS
 from gtts.lang import tts_langs
 
 from search_engine_parser import YahooSearch as GoogleSearch
-from telethon.tl.types import DocumentAttributeAudio
-from telethon.tl.types import MessageMediaPhoto
+from pyrogram.tl.types import DocumentAttributeAudio
+from pyrogram.tl.types import MessageMediaPhoto
 from urbandict import define
 from wikipedia import summary
 from wikipedia.exceptions import DisambiguationError, PageError
