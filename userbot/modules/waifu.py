@@ -4,7 +4,7 @@
 from asyncio import sleep
 import re
 import random
-from telethon.errors.rpcerrorlist import YouBlockedUserError
+from pyrogram.errors.rpcerrorlist import YouBlockedUserError
 import os
 
 from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY, bot
