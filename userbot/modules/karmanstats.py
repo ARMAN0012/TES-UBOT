@@ -3,9 +3,9 @@ Syntax: .stats"""
 import logging
 import time
 
-from telethon.events import NewMessage
-from telethon.tl.custom import Dialog
-from telethon.tl.types import Channel, Chat, User
+from pyrogram.events import NewMessage
+from pyrogram.tl.custom import Dialog
+from pyrogram.tl.types import Channel, Chat, User
 
 from userbot.events import register
 
