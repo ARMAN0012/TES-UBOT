@@ -1,7 +1,7 @@
 # fix by @heyworld for OUB
 # bug fixed by @d3athwarrior
 
-from telethon.tl.types import InputMediaDice
+from pyrogram.tl.types import InputMediaDice
 from userbot.events import register
 from userbot import CMD_HELP
 
