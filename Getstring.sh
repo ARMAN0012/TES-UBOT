@@ -51,8 +51,8 @@ fi
 
 echo -e "\nUpgrading python pip\n"
 pip3 install --upgrade pip setuptools
-echo -e "\nInstalling telethon...\n"
-pip3 install telethon
+echo -e "\nInstalling pyrogram...\n"
+pip3 install pyrogram
 sleep 2
 
 if [ ! -e string_session.py ]; then
