@@ -1,6 +1,6 @@
 
-from telethon import events
-from telethon.errors.rpcerrorlist import YouBlockedUserError
+from pyrogram import events
+from pyrogram.errors.rpcerrorlist import YouBlockedUserError
 from userbot import bot, CMD_HELP
 from userbot.events import register
 
