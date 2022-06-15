@@ -1,6 +1,6 @@
 #credits: mrconfused
 from geopy.geocoders import Nominatim
-from telethon.tl import types
+from pyrogram.tl import types
 from userbot.events import register
 from userbot import CMD_HELP
 
