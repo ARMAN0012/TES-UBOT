@@ -4,10 +4,10 @@
 # ALVIN GANTENG
 # @LORDUSERBOT_GROUP
 
-from telethon import events
+from pyrogram import events
 from userbot import CMD_HELP, bot
 from userbot.events import register
-from telethon.errors.rpcerrorlist import YouBlockedUserError
+from pyrogram.errors.rpcerrorlist import YouBlockedUserError
 import asyncio
 
 
