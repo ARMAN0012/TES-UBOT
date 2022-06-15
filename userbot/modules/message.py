@@ -6,7 +6,7 @@
 
 from asyncio import sleep
 
-from telethon.errors import rpcbaseerrors
+from pyrogram.errors import rpcbaseerrors
 
 from userbot import CMD_HELP, DEVS
 from userbot.events import register
