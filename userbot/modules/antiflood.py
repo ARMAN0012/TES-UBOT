@@ -1,6 +1,6 @@
 import asyncio
-from telethon.tl.functions.channels import EditBannedRequest
-from telethon.tl.types import ChatBannedRights
+from pyrogram.tl.functions.channels import EditBannedRequest
+from pyrogram.tl.types import ChatBannedRights
 from userbot.utils.tools import is_admin
 import userbot.modules.sql_helper.antiflood_sql as sql
 from userbot.events import register
