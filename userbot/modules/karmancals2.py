@@ -12,8 +12,8 @@ from pytgcalls.types.input_stream.quality import (
     LowQualityVideo,
     MediumQualityVideo,
 )
-from telethon.tl import types
-from telethon.utils import get_display_name
+from pyrogram import types
+from pyrogram.utils import get_display_name
 from youtubesearchpython import VideosSearch
 
 from userbot.events import register
