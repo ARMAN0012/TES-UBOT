@@ -16,9 +16,9 @@
 # @Qulec tarafından yazılmıştır.
 # Thanks @Spechide.
 
-from telethon.errors.rpcerrorlist import BotInlineDisabledError as noinline
-from telethon.errors.rpcerrorlist import YouBlockedUserError
-from telethon.tl.functions.contacts import UnblockRequest
+from pyrogram.errors.rpcerrorlist import BotInlineDisabledError as noinline
+from pyrogram.errors.rpcerrorlist import YouBlockedUserError
+from pyrogram.tl.functions.contacts import UnblockRequest
 
 from userbot import BOT_USERNAME
 from userbot import CMD_HANDLER as cmd
