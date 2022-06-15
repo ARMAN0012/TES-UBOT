@@ -6,21 +6,21 @@
 from asyncio import sleep
 from os import remove
 
-from telethon.errors import (
+from pyrogram.errors import (
     BadRequestError,
     ChatAdminRequiredError,
     ImageProcessFailedError,
     PhotoCropSizeSmallError,
     UserAdminInvalidError,
 )
-from telethon.errors.rpcerrorlist import MessageTooLongError, UserIdInvalidError
-from telethon.tl.functions.channels import (
+from pyrogram.errors.rpcerrorlist import MessageTooLongError, UserIdInvalidError
+from pyrogram.tl.functions.channels import (
     EditAdminRequest,
     EditBannedRequest,
     EditPhotoRequest,
 )
-from telethon.tl.functions.messages import UpdatePinnedMessageRequest
-from telethon.tl.types import (
+from pyrogram.tl.functions.messages import UpdatePinnedMessageRequest
+from pyrogram.tl.types import (
     ChannelParticipantsAdmins,
     ChannelParticipantsBots,
     ChatAdminRights,
