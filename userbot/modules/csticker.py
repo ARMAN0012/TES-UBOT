@@ -9,7 +9,7 @@ import random
 import textwrap
 
 from PIL import Image, ImageDraw, ImageFont
-from telethon.tl.types import InputMessagesFilterDocument
+from pyrogram.tl.types import InputMessagesFilterDocument
 from userbot.events import register
 
 
