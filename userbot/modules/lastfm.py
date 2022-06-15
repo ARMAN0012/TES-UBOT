@@ -11,10 +11,10 @@ from urllib import parse
 from os import environ
 from sys import setrecursionlimit
 
-from telethon.errors import AboutTooLongError
-from telethon.tl.functions.account import UpdateProfileRequest
-from telethon.tl.functions.users import GetFullUserRequest
-from telethon.errors.rpcerrorlist import FloodWaitError
+from pyrogram.errors import AboutTooLongError
+from pyrogram.tl.functions.account import UpdateProfileRequest
+from pyrogram.tl.functions.users import GetFullUserRequest
+from pyrogram.errors.rpcerrorlist import FloodWaitError
 
 from userbot import (CMD_HELP, BOTLOG, BOTLOG_CHATID, DEFAULT_BIO,
                      BIO_PREFIX, lastfm, LASTFM_USERNAME, bot)
