@@ -19,10 +19,10 @@ import requests
 from html_telegraph_poster import TelegraphPoster
 from jikanpy import Jikan
 from jikanpy.exceptions import APIException
-from telethon.errors.rpcerrorlist import FilePartsInvalidError
-from telethon.tl.types import (DocumentAttributeAnimated,
+from pyrogram.errors.rpcerrorlist import FilePartsInvalidError
+from pyrogram.tl.types import (DocumentAttributeAnimated,
                                DocumentAttributeFilename, MessageMediaDocument)
-from telethon.utils import is_image, is_video
+from pyrogram.utils import is_image, is_video
 
 from userbot import CMD_HELP
 from userbot.events import register
