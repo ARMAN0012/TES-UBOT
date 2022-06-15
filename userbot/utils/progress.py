@@ -20,7 +20,7 @@ import math
 import re
 import time
 
-from telethon.errors.rpcerrorlist import MessageNotModifiedError
+from pyrogram.errors.rpcerrorlist import MessageNotModifiedError
 
 from .tools import humanbytes, time_formatter
 from .exceptions import CancelProcess
