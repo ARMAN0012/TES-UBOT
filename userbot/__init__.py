@@ -24,12 +24,12 @@ from markdown import markdown
 from dotenv import load_dotenv
 from pytgcalls import PyTgCalls
 from requests import get
-from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
-from telethon.sync import TelegramClient, custom, events
-from telethon.tl.functions.channels import JoinChannelRequest
-from telethon.sessions import StringSession
-from telethon import Button, events, functions, types
-from telethon.utils import get_display_name
+from pyrogram.network.connection.tcpabridged import ConnectionTcpAbridged
+from pyrogram.sync import TelegramClient, custom, events
+from pyrogram.tl.functions.channels import JoinChannelRequest
+from pyrogram.sessions import StringSession
+from pyrogram import Button, events, functions, types
+from pyrogram.utils import get_display_name
 from .storage import Storage
 
 def STORAGE(n):
