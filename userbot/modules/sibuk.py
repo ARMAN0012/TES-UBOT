@@ -4,8 +4,8 @@ from datetime import datetime
 import time
 from random import choice, randint
 
-from telethon.events import StopPropagation
-from telethon.tl.functions.account import UpdateProfileRequest
+from pyrogram.events import StopPropagation
+from pyrogram.tl.functions.account import UpdateProfileRequest
 
 from userbot import (  # noqa pylint: disable=unused-import isort:skip
     AFKREASON,
