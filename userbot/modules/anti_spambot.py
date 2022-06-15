@@ -7,8 +7,8 @@
 from asyncio import sleep
 
 from requests import get
-from telethon.events import ChatAction
-from telethon.tl.types import ChannelParticipantsAdmins, Message
+from pyrogram import ChatAction
+from pyrogram.tl.types import ChannelParticipantsAdmins, Message
 
 from userbot import (
     ANTI_SPAMBOT,
