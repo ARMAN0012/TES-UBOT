@@ -1,7 +1,7 @@
 # Ported by Aidil Aryanto
 
 import os
-from telethon.errors.rpcerrorlist import YouBlockedUserError
+from pyrogram.errors.rpcerrorlist import YouBlockedUserError
 
 from userbot.events import register
 from userbot import bot, TEMP_DOWNLOAD_DIRECTORY, CMD_HELP
