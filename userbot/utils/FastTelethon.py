@@ -7,15 +7,15 @@ import os
 from collections import defaultdict
 from typing import Optional, List, AsyncGenerator, Union, Awaitable, DefaultDict, Tuple, BinaryIO
 
-from telethon import utils, helpers, TelegramClient
-from telethon.crypto import AuthKey
-from telethon.network import MTProtoSender
-from telethon.tl.alltlobjects import LAYER
-from telethon.tl.functions import InvokeWithLayerRequest
-from telethon.tl.functions.auth import ExportAuthorizationRequest, ImportAuthorizationRequest
-from telethon.tl.functions.upload import (GetFileRequest, SaveFilePartRequest,
+from pyrogram import utils, helpers, TelegramClient
+from pyrogram.crypto import AuthKey
+from pyrogram.network import MTProtoSender
+from pyrogram.tl.alltlobjects import LAYER
+from pyrogram.tl.functions import InvokeWithLayerRequest
+from pyrogram.tl.functions.auth import ExportAuthorizationRequest, ImportAuthorizationRequest
+from pyrogram.tl.functions.upload import (GetFileRequest, SaveFilePartRequest,
                                           SaveBigFilePartRequest)
-from telethon.tl.types import (
+from pyrogram.tl.types import (
     Document,
     InputFileLocation,
     InputDocumentFileLocation,
