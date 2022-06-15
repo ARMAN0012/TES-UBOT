@@ -5,7 +5,7 @@
 #
 # Port to userbot by @MoveAngel
 
-from telethon.errors.rpcerrorlist import YouBlockedUserError
+from pyrogram.errors.rpcerrorlist import YouBlockedUserError
 from userbot import bot, CMD_HELP
 from userbot.events import register
 from asyncio.exceptions import TimeoutError
