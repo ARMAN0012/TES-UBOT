@@ -22,7 +22,7 @@ import aiohttp
 from apiclient.discovery import build
 from httplib2 import Http
 from oauth2client import client, file
-from telethon import events
+from pyrogram import events
 
 from userbot import (
     BOTLOG_CHATID,
