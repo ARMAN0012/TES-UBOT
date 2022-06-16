@@ -3,7 +3,7 @@
 from time import sleep
 from userbot import CMD_HELP, bot
 from userbot.events import register
-from telethon import events
+from pyrogram import events
 import asyncio
 
 
