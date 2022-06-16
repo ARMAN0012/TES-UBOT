@@ -1,7 +1,7 @@
 # all plugins are imported from bothub,x-tra-telegram by @heyworld
 # Don't edit or you gay
 # credits: spechide,ravana69,mkaraniya & me
-from telethon import events
+from pyrogram import events
 
 import asyncio
 
@@ -9,7 +9,7 @@ from userbot.events import register
 from platform import uname
 from userbot import CMD_HELP, bot, ALIVE_NAME
 from collections import deque
-from telethon.errors.rpcerrorlist import MessageIdInvalidError
+from pyrogram.errors.rpcerrorlist import MessageIdInvalidError
 import random
 
 # ================= CONSTANT =================
