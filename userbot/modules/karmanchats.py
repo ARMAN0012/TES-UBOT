@@ -7,7 +7,7 @@
 from asyncio import sleep
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot, ALIVE_NAME
 from datetime import datetime
-from telethon import functions
+from pyrogram import functions
 from emoji import emojize
 from math import sqrt
 from pyrogram.tl.functions.channels import GetFullChannelRequest, GetParticipantsRequest
