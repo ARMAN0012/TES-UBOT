@@ -72,7 +72,7 @@ async def get_users(event):
     async for user in event.client.iter_participants(manubotteam.full_chat.id):
         try:
             if error.startswith("Too"):
-                return await ram.edit(f"**Tugas Selesai bersama dengan Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people")
+                return await ram.edit(f"**Tugas Selesai bersama dengan Error**\n(`May Got Limit Error from pyrogram Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people")
             await event.client(functions.channels.InviteToChannelRequest(channel=chat, users=[user.id]))
             s = s + 1
             await man.edit(f"**Sedang berjalan...**\n\n• Menambahkan `{s}` Anak Kontol \n• Gagal Mengundang `{f}` Anak Kontol\n\n**× LastError:** `{error}`")
