@@ -5,7 +5,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-from pyrogram.sync import TelegramClient
+from pyrogram.sync import Client
 from pyrogram.sessions import StringSession
 
 print("""Please go-to my.telegram.org
