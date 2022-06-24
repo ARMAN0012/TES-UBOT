@@ -1,5 +1,5 @@
 # Yaa begitu lah
-# Fixes by : RAM-UBOT
+# Fixes by : Tot
 """ Userbot initialization. """
 
 import logging
