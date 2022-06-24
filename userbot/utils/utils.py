@@ -10,7 +10,7 @@ from pathlib import Path
 from random import randint
 
 import heroku3
-from pyrogram.tl.functions.contacts import UnblockRequest
+from pyrogram.functions.contacts import UnblockRequest
 
 from userbot import (
     BOT_TOKEN,
