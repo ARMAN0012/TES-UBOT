@@ -2,8 +2,8 @@ import datetime
 
 from bs4 import BeautifulSoup
 from markdown import markdown
-from pyrogram.tl.tlobject import TLObject
-from pyrogram.tl.types import MessageEntityPre
+from pyrogram.tlobject import TLObject
+from pyrogram.types import MessageEntityPre
 from pyrogram.utils import add_surrogate
 
 from .paste import pastetext
