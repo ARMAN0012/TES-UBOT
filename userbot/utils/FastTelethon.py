@@ -10,12 +10,12 @@ from typing import Optional, List, AsyncGenerator, Union, Awaitable, DefaultDict
 from pyrogram import utils, helpers, TelegramClient
 from pyrogram.crypto import AuthKey
 from pyrogram.network import MTProtoSender
-from pyrogram.tl.alltlobjects import LAYER
-from pyrogram.tl.functions import InvokeWithLayerRequest
-from pyrogram.tl.functions.auth import ExportAuthorizationRequest, ImportAuthorizationRequest
-from pyrogram.tl.functions.upload import (GetFileRequest, SaveFilePartRequest,
+from pyrogram.alltlobjects import LAYER
+from pyrogram.functions import InvokeWithLayerRequest
+from pyrogram.functions.auth import ExportAuthorizationRequest, ImportAuthorizationRequest
+from pyrogram.functions.upload import (GetFileRequest, SaveFilePartRequest,
                                           SaveBigFilePartRequest)
-from pyrogram.tl.types import (
+from pyrogram.types import (
     Document,
     InputFileLocation,
     InputDocumentFileLocation,
