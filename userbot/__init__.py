@@ -25,9 +25,11 @@ from dotenv import load_dotenv
 from pytgcalls import PyTgCalls
 from requests import get
 from pyrogram.network.connection.tcpabridged import ConnectionTcpAbridged
-from pyrogram.sync import Client, custom, events
+from pyrogram.sync import TelegramClient, custom, events
 from pyrogram.tl.functions.channels import JoinChannelRequest
 from pyrogram.sessions import StringSession
+from pyrogram import Client
+from pyrogram.types import *
 from pyrogram import Button, events, functions, types
 from pyrogram.utils import get_display_name
 from .storage import Storage
@@ -64,6 +66,10 @@ logging.basicConfig(
 )
 logging.getLogger("asyncio").setLevel(logging.ERROR)
 logging.getLogger("pytgcalls").setLevel(logging.ERROR)
+logging.getLogger("pyrogram.client").setLevel(logging.WARNING)
+logging.getLogger("pyrogram.syncer").setLevel(logging.CRITICAL)
+logging.getLogger("pyrogram.session.auth").setLevel(logging.CRITICAL)
+logging.getLogger("pyrogram.session.session").setLevel(logging.CRITICAL)
 logging.getLogger("pyrogram.network.mtprotosender").setLevel(logging.ERROR)
 logging.getLogger("pyrogram.network.connection.connection").setLevel(logging.ERROR)
 LOGS = getLogger(__name__)
