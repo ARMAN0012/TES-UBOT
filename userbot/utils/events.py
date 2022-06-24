@@ -1,4 +1,4 @@
-from pyrogram.tl.types import MessageEntityMentionName
+from pyrogram.types import MessageEntityMentionName
 
 from .logger import logging
 from .tools import edit_delete
