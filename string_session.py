@@ -1,27 +1,93 @@
-#!/usr/bin/env python3
-# (c) https://t.me/TelethonChat/37677 and SpEcHiDe
+# Copyright (C) 2020-2022 TeamDerUntergang <https://github.com/TeamDerUntergang>
 #
-# Licensed under the Raphielscape Public License, Version 1.d (the "License");
-# you may not use this file except in compliance with the License.
+# This file is part of TeamDerUntergang project,
+# and licensed under GNU Affero General Public License v3.
+# See the GNU Affero General Public License for more details.
+#
+# All rights reserved. See COPYING, AUTHORS.
 #
 
-from pyrogram.sync import TelegramClient
-from pyrogram.sessions import StringSession
+from pyrogram import Client
 
-print("""Please go-to my.telegram.org
+lang = input('Select lang (tr, en): ').lower()
+
+if lang == 'en':
+    print('''\nPlease go to my.telegram.org
 Login using your Telegram account
 Click on API Development Tools
-Create a new application, by entering the required details
-Check your Telegram saved messages section to copy the STRING_SESSION""")
-API_KEY = int(input("Enter API_KEY here: "))
-API_HASH = input("Enter API_HASH here: ")
+Create a new application, by entering the required details\n''')
 
-with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
-    print("Check Telegram Save Message Mu Untuk Copy STRING_SESSION ")
-    session_string = client.session.save()
-    saved_messages_template = """Grup Support @obrolansuar
+    API_ID = ''
+    API_HASH = ''
 
-<code>STRING_SESSION</code>: <code>{}</code>
+    while not API_ID.isdigit() or len(API_ID) < 5 or len(API_ID) > 8:
+        API_ID = input('API ID: ')
 
-⚠️ <i>Please be careful before passing this value to third parties</i>""".format(session_string)
-    client.send_message("me", saved_messages_template, parse_mode="html")
+    API_ID = int(API_ID)
+
+    while len(API_HASH) != 32:
+        API_HASH = input('API HASH: ')
+
+    app = Client(
+        'sedenify',
+        api_id=API_ID,
+        api_hash=API_HASH)
+
+    with app:
+        self = app.get_me()
+        session = app.export_session_string()
+        out = f'''**Hi [{self.first_name}](tg://user?id={self.id})
+\nAPI_ID:** `{API_ID}`
+\n**API_HASH:** `{API_HASH}`
+\n**SESSION:** `{session}`
+\n**NOTE: Don't give your account information to others!**'''
+        out2 = 'Session successfully generated!'
+        if self.is_bot:
+            print(f'{session}\n{out2}')
+        else:
+            app.send_message('me', out)
+            print('''Session successfully generated!
+Please check your Telegram Saved Messages''')
+
+
+elif lang == 'tr':
+    print('''Lütfen my.telegram.org adresine gidin
+Telegram hesabınızı kullanarak giriş yapın
+API Development Tools kısmına tıklayın
+Gerekli ayrıntıları girerek yeni bir uygulama oluşturun\n''')
+
+    API_ID = ''
+    API_HASH = ''
+
+    while not API_ID.isdigit() or len(API_ID) < 5 or len(API_ID) > 8:
+        API_ID = input('API ID: ')
+
+    API_ID = int(API_ID)
+
+    while len(API_HASH) != 32:
+        API_HASH = input('API HASH: ')
+
+    app = Client(
+        'sedenify',
+        api_id=API_ID,
+        api_hash=API_HASH)
+
+    with app:
+        self = app.get_me()
+        session = app.export_session_string()
+        out = f'''**Merhaba [{self.first_name}](tg://user?id={self.id})
+\nAPI_ID:** `{API_ID}`
+\n**API_HASH:** `{API_HASH}`
+\n**SESSION:** `{session}`
+\n**NOT: Hesap bilgileriniz başkalarına vermeyin!**'''
+        out2 = 'Session başarıyla oluşturuldu!'
+        if self.is_bot:
+            print(f'{session}\n{out2}')
+        else:
+            app.send_message('me', out)
+            print('''Session başarıyla oluşturuldu!
+Lütfen Telegram Kayıtlı Mesajlarınızı kontrol edin.''')
+
+
+else:
+    print('\nWhat? Please select en or tr')
