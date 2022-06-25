@@ -26,7 +26,7 @@ from pytgcalls import PyTgCalls
 from requests import get
 from pyrogram.network.connection.tcpabridged import ConnectionTcpAbridged
 from pyrogram.sync import TelegramClient, custom, events
-from pyrogram.tl.functions.channels import JoinChannelRequest
+from pyrogram.functions.channels import JoinChannelRequest
 from pyrogram.sessions import StringSession
 from pyrogram import Client
 from pyrogram.types import *
